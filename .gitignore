@@ -12,3 +12,15 @@ repositories/*
 
 !repositories/.gitkeep
 
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+.env
+.venv/
+runtime/
+data/
+logs/
+backups/
+secrets/
