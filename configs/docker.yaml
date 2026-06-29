@@ -1,0 +1,7 @@
+docker:
+
+  compose: docker-compose.yml
+
+  runtime: docker
+
+  restart: unless-stopped

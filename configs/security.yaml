@@ -1,0 +1,7 @@
+security:
+
+  secrets: .env
+
+  encryption: future
+
+  auth: future

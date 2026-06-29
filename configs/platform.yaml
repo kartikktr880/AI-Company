@@ -1,0 +1,7 @@
+platform:
+
+  name: AI Company
+
+  version: 0.1
+
+  environment: development

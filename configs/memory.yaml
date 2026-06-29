@@ -1,0 +1,11 @@
+memory:
+
+  vector: qdrant
+
+  graph: neo4j
+
+  relational: postgres
+
+  cache: redis
+
+  object: minio
