@@ -1,6 +1,14 @@
-secrets/
+
+# AI Company
+
 .env
-data/
-logs/
+secrets/
 runtime/
+logs/
 backups/
+data/
+
+repositories/*
+
+!repositories/.gitkeep
+
