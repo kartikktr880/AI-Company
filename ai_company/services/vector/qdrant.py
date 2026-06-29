@@ -1,14 +1,15 @@
-import os
 from qdrant_client import QdrantClient
 from loguru import logger
+from ai_company.core.config import config
 
 class QdrantService:
 
     def connect(self):
 
         client = QdrantClient(
-            host=os.getenv("QDRANT_HOST"),
-            port=int(os.getenv("QDRANT_PORT"))
+            host=config.QDRANT_HOST,
+            port=config.QDRANT_PORT,
+            check_compatibility=False
         )
 
         client.get_collections()

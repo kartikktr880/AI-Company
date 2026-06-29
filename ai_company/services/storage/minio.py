@@ -1,16 +1,23 @@
-import os
 from minio import Minio
+
 from loguru import logger
+
+from ai_company.core.config import config
 
 class MinioService:
 
     def connect(self):
 
         client = Minio(
-            os.getenv("MINIO_ENDPOINT"),
-            access_key=os.getenv("MINIO_ROOT_USER"),
-            secret_key=os.getenv("MINIO_ROOT_PASSWORD"),
+
+            config.MINIO_ENDPOINT,
+
+            access_key=config.MINIO_ROOT_USER,
+
+            secret_key=config.MINIO_ROOT_PASSWORD,
+
             secure=False,
+
         )
 
         logger.success("MinIO connected")

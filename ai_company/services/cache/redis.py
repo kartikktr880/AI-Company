@@ -1,14 +1,15 @@
-import os
 import redis
 from loguru import logger
+from ai_company.core.config import config
 
 class RedisService:
 
     def connect(self):
 
         client = redis.Redis(
-            host=os.getenv("REDIS_HOST"),
-            port=int(os.getenv("REDIS_PORT"))
+            host=config.REDIS_HOST,
+            port=config.REDIS_PORT,
+            decode_responses=True
         )
 
         client.ping()
