@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+loguru
+httpx
+redis
+psycopg[binary]
+qdrant-client
+neo4j
+minio
