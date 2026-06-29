@@ -1,0 +1,13 @@
+agents:
+
+  commander:
+    enabled: true
+
+  researcher:
+    enabled: true
+
+  engineer:
+    enabled: true
+
+  reviewer:
+    enabled: true

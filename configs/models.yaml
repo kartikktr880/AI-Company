@@ -1,0 +1,13 @@
+models:
+
+  planner:
+    provider: openai
+
+  coder:
+    provider: openhands
+
+  researcher:
+    provider: gemini
+
+  memory:
+    provider: qdrant

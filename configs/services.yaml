@@ -1,0 +1,18 @@
+services:
+  postgres:
+    enabled: true
+
+  redis:
+    enabled: true
+
+  qdrant:
+    enabled: true
+
+  neo4j:
+    enabled: true
+
+  minio:
+    enabled: true
+
+  openhands:
+    enabled: true
